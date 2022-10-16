@@ -8,6 +8,7 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Contacts } from './pages/Contacts';
+import { Movie } from './pages/Movie';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
               <Route index element={<Home />} />
               <Route path='about' element={<About />} />
               <Route path='contacts' element={<Contacts />} />
+              <Route path='movies' element={<Movie />} />
+              <Route path='movies/:title' element={<Movie />} />
               {/* <Route path='blog' element={<Intro />}></Route> */}
               {/* <Route path='*' element={<Notfound />} /> */}
             </Route>

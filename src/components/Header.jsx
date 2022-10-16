@@ -17,6 +17,9 @@ function Header() {
           <li>
             <Link to='/contacts'>Contacts</Link>
           </li>
+          <li>
+            <Link to='/movies'>Movie</Link>
+          </li>
         </ul>
       </div>
     </nav>
