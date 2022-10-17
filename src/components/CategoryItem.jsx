@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function CategoryItem(props) {
-  const { idCategory, strCategory, strCategoryDescription, strCategoryThumb } = props;
+  const { strCategory, strCategoryDescription, strCategoryThumb } = props;
 
   return (
     <div className='card'>
@@ -15,16 +15,12 @@ function CategoryItem(props) {
       </div>
 
       <div className='card-action'>
-        <Link to={`/category/${idCategory}`} className='btn'>
+        <Link to={`/category/${strCategory}`} className='btn'>
           Category
         </Link>
       </div>
     </div>
   );
-
-  {
-    /* <div className='card'>{idCategory}</div>; */
-  }
 }
 
 export { CategoryItem };

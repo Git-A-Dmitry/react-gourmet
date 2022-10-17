@@ -1,14 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-// import { Layout } from './components/Layout';
 
 // import './App.css';
 
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Contacts } from './pages/Contacts';
-import { Movie } from './pages/Movie';
+import { Category } from './pages/Category';
 
 function App() {
   return (
@@ -17,14 +16,11 @@ function App() {
         <Header />
         <main className='container content'>
           <Routes>
-            {/* <Route path='/' element={<Layout />}> */}
             <Route path='/'>
               <Route index element={<Home />} />
               <Route path='about' element={<About />} />
               <Route path='contacts' element={<Contacts />} />
-              <Route path='movies' element={<Movie />} />
-              <Route path='movies/:title' element={<Movie />} />
-              {/* <Route path='blog' element={<Intro />}></Route> */}
+              <Route path='category/:name' element={<Category />} />
               {/* <Route path='*' element={<Notfound />} /> */}
             </Route>
           </Routes>
