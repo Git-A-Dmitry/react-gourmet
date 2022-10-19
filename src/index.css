@@ -13,8 +13,16 @@ nav {
   padding: 0 1rem;
 }
 
+nav ul a {
+  color: dimgrey;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .container {
   padding-bottom: 10px;
+  width: 85%;
 }
 
 .brand-logo {
@@ -28,8 +36,8 @@ nav {
 
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 2.5rem;
 }
 
 .card {
@@ -41,4 +49,45 @@ nav {
 
 .card-content {
   flex-grow: 1;
+}
+
+/* Чтобы image размещалась в пределах окна на мобилке */
+img {
+  width: 50%;
+  max-width: 100%;
+}
+
+/* img:hover {
+  width: 80%;
+  transition: 1s;
+} */
+
+iframe {
+  width: 600px;
+  height: 350px;
+  max-width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+
+.description > img {
+  width: 40%;
+  height: 40%;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.info {
+  /* background-color: mintcream; */
+  /* padding: 0px 20px; */
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  margin-top: 10px;
 }

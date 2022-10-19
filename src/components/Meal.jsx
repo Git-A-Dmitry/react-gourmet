@@ -9,11 +9,11 @@ function Meal(props) {
       </div>
 
       <div className='card-content'>
-        <span className='card-title'>{strMeal}</span>
+        <span className='card-title'>{strMeal.slice(0, 20)}</span>
       </div>
 
       <div className='card-action'>
-        <Link to={`/meal/${idMeal}`} className='btn'>
+        <Link to={`/meal/${idMeal}`} className='btn green lighten-2'>
           Recipe
         </Link>
       </div>

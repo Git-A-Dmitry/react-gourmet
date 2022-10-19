@@ -2,11 +2,14 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className='teal darken-3'>
+    <nav className='orange'>
       <div className='nav-wrapper'>
-        <span className='brand-logo' style={{ fontSize: '1.5rem' }}>
+        <Link to='/' className='brand-logo' style={{ fontSize: '1.5rem' }}>
           Gourmet
-        </span>
+        </Link>
+        {/* <span className='brand-logo' style={{ fontSize: '1.5rem' }}>
+          Gourmet
+        </span> */}
         <ul id='nav-mobile' className='right hide-on-med-and-down'>
           <li>
             <Link to='/'>Home</Link>
