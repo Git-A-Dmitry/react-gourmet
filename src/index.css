@@ -91,3 +91,20 @@ iframe {
 .btn {
   margin-top: 10px;
 }
+
+.search-bar {
+  display: flex;
+  justify-content: right;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0rem;
+  right: 0.5rem;
+}
+
+#search {
+  color: #009688;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
